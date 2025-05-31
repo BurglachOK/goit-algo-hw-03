@@ -19,7 +19,10 @@ def sorting(dir_sorting: Path, dir_sorted: Path):
 try:
     sorting(Path(sys.argv[1]), Path(sys.argv[2]))
 except:
-    sorting(Path(sys.argv[1]), Path(sys.argv[1]) / 'dist')
+    try:
+        sorting(Path(sys.argv[1]), Path(sys.argv[1]) / 'dist')
+    except:
+        print('Usage: python task1.py <source_directory> <destination_directory>')
 
         # if item.is_dir():
         #     pass
