@@ -13,14 +13,14 @@ def draw_koch_curve(order, size=300):
     window.bgcolor("white")
 
     t = turtle.Turtle()
-    t.speed(100)  
+    t.speed(0)  
     t.penup()
     t.goto(-size / 2, 0)
     t.pendown()
 
     for i in range(3):
         koch_curve(t, order, size)
-        t.left(-120)
+        t.right(120)
 
 
     window.mainloop()
