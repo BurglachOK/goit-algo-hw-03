@@ -24,5 +24,3 @@ except:
     except:
         print('Usage: python task1.py <source_directory> <destination_directory>')
 
-        # if item.is_dir():
-        #     pass
